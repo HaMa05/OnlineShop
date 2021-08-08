@@ -963,7 +963,9 @@
     }
 
     &-circle {
-        @include size(8rem);
+        @include size(9vmin);
+        min-width: 5rem;
+        min-height: 5rem;
         display: inline-block;
         background-color: $dark-gray;
         opacity: 0.3;
@@ -1727,6 +1729,11 @@
 
         &-desc {
             font-size: 5.5vmin;
+        }
+    }
+
+    .brands {
+        &-circle {
         }
     }
 }
