@@ -1889,6 +1889,14 @@ a {
   .footer-category-item {
     padding: 0 0.5rem;
   }
+
+  .toggle {
+    display: block;
+  }
+
+  .main-right-filter {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
