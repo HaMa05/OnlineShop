@@ -1243,7 +1243,7 @@
     padding: 6rem 1rem;
 
     &-wrap {
-        @include flex(space-between);
+        @include flex(space-evenly, $wrap: wrap);
     }
 
     &-title {
@@ -1277,16 +1277,18 @@
     @include flex(center, $wrap: wrap);
 
     &-wrap {
-        @include flex(space-between, $align: stretch);
+        @include flex(space-between, $align: stretch, $wrap: wrap);
     }
 
     &-col {
         width: calc(100% / 2 - 2rem);
-        @include flex(space-between, $align: stretch);
+        @include flex(space-evenly, $align: stretch, $wrap: wrap);
 
         &-2 {
             width: calc(100% / 2 - 2rem);
-            @include flex(space-between, flex-start, column);
+            @include flex(space-between, flex-start, column, $wrap: wrap);
+            max-width: 100%;
+            min-width: 27rem;
         }
     }
 
@@ -1613,7 +1615,6 @@
 
         &-wrap {
             flex-direction: column;
-            flex-wrap: wrap;
             align-items: center;
         }
     }
@@ -1721,7 +1722,7 @@
     }
 }
 
-@media screen and (max-width: 454px) {
+@media screen and (max-width: 470px) {
     .section {
         &-title {
             font-size: 22vmin;
@@ -1732,8 +1733,11 @@
         }
     }
 
-    .brands {
-        &-circle {
+    .footer {
+        &-category {
+            &-item {
+                padding: 0 0.5rem;
+            }
         }
     }
 }
