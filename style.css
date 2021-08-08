@@ -1190,13 +1190,13 @@ a {
   background-image: url("./images/love-noactive.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .news-item:nth-child(2) .news-social-comment::before {
   background-image: url("./images/speech-bubble.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .news-img {
   height: 19rem;
@@ -1275,7 +1275,6 @@ a {
   background-image: url("./images/love.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-size: contain;
 }
 .news-social-comment {

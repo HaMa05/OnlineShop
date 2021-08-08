@@ -1026,13 +1026,13 @@
     &-item:nth-child(2) {
         .news-social-love {
             &::before {
-                @include background('love-noactive.svg');
+                @include background('love-noactive.svg', $size: contain);
             }
         }
 
         .news-social-comment {
             &::before {
-                @include background('speech-bubble.svg');
+                @include background('speech-bubble.svg', $size: contain);
             }
         }
     }
@@ -1107,8 +1107,7 @@
 
             &::before {
                 @include before(1.8rem, 100%, 0, 0, 0, 0, null, null, 0);
-                @include background('love.svg');
-                background-size: contain;
+                @include background('love.svg', $size: contain);
             }
         }
 
