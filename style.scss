@@ -12,8 +12,6 @@
     @include size(100%, 5rem);
     @include flex($justify: center);
     background-color: $header-color;
-    padding: 0 1rem;
-
     &-info {
         @include flex($justify: space-between);
     }
@@ -59,7 +57,7 @@
 .nav {
     @include flex($justify: center);
     background-color: $background-white;
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 0;
 
     &-info {
         @include flex($justify: space-between);
@@ -228,7 +226,7 @@
     @include size(100%, 0);
     @include flex($justify: center);
     background-color: $background-white;
-    margin: 10rem 1rem 1rem;
+    margin: 10rem 0 1rem 0;
     height: auto;
     overflow: hidden;
 
@@ -1207,7 +1205,7 @@
 .trending {
     background-color: $filter-color;
     @include flex(center);
-    padding: 8rem 1rem;
+    padding: 8rem 0;
 
     &-wrap {
         @include flex(center, $wrap: wrap);
@@ -1544,7 +1542,7 @@
 .footer {
     @include flex(center);
     background-color: $primary-dark-color;
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 2rem 0 4rem 0;
     border-top: 0.1rem solid $border-form-color;
 
     ul,
@@ -1717,6 +1715,18 @@
     .nav {
         &-menu {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .section {
+        &-title {
+            font-size: 22vmin;
+        }
+
+        &-desc {
+            font-size: 5.5vmin;
         }
     }
 }
