@@ -1,0 +1,25 @@
+.icon-xm {
+    @include size(1rem);
+    cursor: pointer;
+}
+
+.icon-xsm {
+    @include size(1.5rem);
+    cursor: pointer;
+}
+
+.icon-sm {
+    @include size(2rem);
+    cursor: pointer;
+}
+
+
+.icon-md {
+    @include size(3rem);
+    cursor: pointer;
+}
+
+.icon-lg {
+    @include size(8rem);
+    cursor: pointer;
+}

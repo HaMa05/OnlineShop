@@ -1,0 +1,40 @@
+@import 'variables';
+
+@mixin flex($justify: flex-start, $align: center, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin size($width: 1rem, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin background($image: '', $repeat: no-repeat, $position: center, $size: cover) {
+    background : {
+        image: url('./images/#{$image}');
+        repeat: $repeat;
+        position: $position;
+        size: $size;
+    }
+}
+
+@mixin before($width: 0, $height: $width, $rotate: 0, $transformX: 0, $transformY: 0, $t: null, $r: null, $b: null, $l: null) {
+    content: '';
+    position: absolute;
+    @include size($width, $height);
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+    transform: translate($transformX, $transformY) rotate($rotate);
+}
+
+@mixin arrow($size: 0, $size-border: 0, $rotate: 0, $transformX: 0, $transformY: 0, $t: null, $r: null, $b: null, $l: null) {
+    @include before($size, $size, $rotate, $transformX, $transformY, $t, $r, $b, $l);
+    border-top: $size-border solid currentColor;
+    border-right: $size-border solid currentColor;
+}
