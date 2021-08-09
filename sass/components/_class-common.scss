@@ -1,0 +1,46 @@
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.bg-navigation{
+    background-color: $navigation-color;
+    color: white;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.border-navigation {
+    border-color: $navigation-color !important;
+}
+
+.bg-active {
+    background-color: $blue;
+    color: white;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $page-color;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.circle {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text-blue {
+    color: $blue !important;
+}

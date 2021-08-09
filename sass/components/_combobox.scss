@@ -1,0 +1,26 @@
+.combobox {
+    background-color: $background-white;
+    padding: 0.7rem 1.5rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: $dark-gray;
+    display: flex;
+    align-items: center;
+
+    &-title {
+        font-size: 1.6rem;
+        padding-right: 4.5rem;
+        position: relative;
+
+    }
+
+    &::before {
+        @include arrow(0.7rem, 0.2rem, 135deg, 0, -50%, 50%, 1rem);
+    }
+
+    &-border {
+        border: 2px solid $hoverSub-color;
+    }
+}
+
