@@ -35,7 +35,7 @@
                 }
 
                 a {
-                    color: $primary-color;
+                    color: $page-color;
                     position: relative;
                     padding-left: 1.4rem;
 
@@ -47,7 +47,7 @@
         }
 
         .btn-wishlist {
-            background-color: $primary-color;
+            background-color: $page-color;
             color: white;
             margin-left: 6rem;
         }
@@ -88,10 +88,10 @@
             padding-right: 5vmin;
 
             a {
-                color: $primary-color;
+                color: $page-color;
 
                 &:hover {
-                    color: $secondary-color;
+                    color: $blue;
                 }
             }
         }
@@ -105,7 +105,7 @@
 
         &-amount {
             margin-left: 1.5rem;
-            background: $secondary-color;
+            background: $blue;
             color: white;
             width: 2.4rem;
             height: 1.8rem;
@@ -124,14 +124,14 @@
                 border-left-width: 0;
                 top: 0;
                 left: -1rem;
-                border-color: transparent $secondary-color transparent transparent;
+                border-color: transparent $blue transparent transparent;
                 z-index: 9999;
             }
         }
     }
 }
 
-.section {
+.banner {
     @include flex($justify: center);
     @include size(100%, 40rem);
     position: relative;
@@ -187,7 +187,7 @@
         }
 
         span:first-child {
-            color: $secondary-color;
+            color: $blue;
         }
 
         span:last-child {
@@ -213,10 +213,10 @@
             @include size(8rem);
             @include flex($justify: center);
             cursor: pointer;
-            background-color: $primary-color;
+            background-color: $page-color;
 
             &:hover {
-                background-color: $secondary-color;
+                background-color: $blue;
             }
         }
     }
@@ -258,13 +258,13 @@
             padding: 1rem;
             margin-top: 7rem;
 
-            &-page {
+            &-text {
                 margin-right: 2rem;
                 color: $dark-gray;
             }
 
-            &_left,
-            &_right {
+            &-sort,
+            &-page {
                 @include flex();
             }
         }
@@ -292,7 +292,7 @@
                 bottom: 4rem;
                 width: 100%;
                 padding: 1rem 0;
-                background-color: $detail-product;
+                background-color: $detail-product-color;
                 cursor: pointer;
 
                 & > span {
@@ -303,7 +303,7 @@
                         position: relative;
 
                         &:before {
-                            background-color: $secondary-color;
+                            background-color: $blue;
                             @include before(5rem, 0.1rem, 0, -50%, 0, null, null, 0, 50%);
                             transition: all 0.4s;
                         }
@@ -323,14 +323,14 @@
                         }
 
                         &-detail {
-                            background-color: $primary-color;
+                            background-color: $page-color;
                         }
                     }
                 }
             }
 
             &-title {
-                color: $primary-color;
+                color: $page-color;
                 font-family: 'Montserrat';
             }
 
@@ -350,7 +350,7 @@
                 @include flex($justify: center);
                 font-size: 1.4em;
                 border-radius: 0.4rem;
-                border: 0.1rem solid $primary-color;
+                border: 0.1rem solid $page-color;
                 position: relative;
                 cursor: pointer;
                 margin: 0 auto;
@@ -362,7 +362,7 @@
 
                 &:hover {
                     color: white;
-                    background-color: $primary-color;
+                    background-color: $page-color;
                 }
             }
 
@@ -433,7 +433,7 @@
                 }
 
                 &-price {
-                    color: $secondary-color;
+                    color: $blue;
                     padding-bottom: 1.5rem;
                 }
 
@@ -445,12 +445,12 @@
                             }
 
                             &-title {
-                                color: $primary-color;
+                                color: $page-color;
                             }
                         }
 
                         &-overlay {
-                            background-color: $secondary-color;
+                            background-color: $blue;
                             opacity: 0.5;
                             z-index: 0;
                         }
@@ -542,7 +542,7 @@
         & > a {
             text-transform: uppercase;
             font-family: 'Montserrat';
-            color: $primary-color;
+            color: $page-color;
             transition: all 0.4s;
             padding: 1.8rem 2rem;
         }
@@ -551,7 +551,7 @@
         &:active,
         &:focus {
             & > a {
-                color: $secondary-color;
+                color: $blue;
             }
         }
     }
@@ -570,7 +570,7 @@
         &:active,
         &:focus {
             & > a {
-                color: $secondary-color;
+                color: $blue;
             }
         }
 
@@ -685,7 +685,7 @@
 
     &-circle {
         @include size(1.5rem);
-        background-color: $secondary-color;
+        background-color: $blue;
         position: absolute;
         bottom: 50%;
         transform: translateY(50%);
@@ -701,18 +701,18 @@
     }
 
     &-btn {
-        color: $secondary-color;
+        color: $blue;
         text-transform: uppercase;
         font-family: 'Montserrat';
         background-color: transparent;
-        border: 0.2rem solid $secondary-color;
+        border: 0.2rem solid $blue;
     }
 
     &-price {
-        color: $product-title;
+        color: $product-title-color;
 
         .money {
-            color: $primary-color;
+            color: $page-color;
         }
     }
 }
@@ -726,7 +726,7 @@
     &-item {
         font-size: 1.6rem;
         padding: 0.8rem;
-        color: $product-title;
+        color: $product-title-color;
         border: 1px solid currentColor;
         margin: 0.3rem;
     }
@@ -783,11 +783,11 @@
     }
 
     &-title {
-        color: $product-title;
+        color: $product-title-color;
     }
 
     &-price {
-        color: $primary-color;
+        color: $page-color;
     }
 }
 
@@ -880,7 +880,7 @@
     }
 
     &-signup {
-        background-color: $primary-color;
+        background-color: $page-color;
         text-transform: uppercase;
         color: white;
         text-transform: uppercase;
@@ -897,11 +897,11 @@
         margin: 3rem 0;
 
         &-title {
-            color: $product-title;
+            color: $product-title-color;
         }
 
         &-price {
-            color: $primary-color;
+            color: $page-color;
         }
     }
 
@@ -914,14 +914,14 @@
     &-view {
         color: white;
         text-transform: uppercase;
-        background-color: $secondary-color;
+        background-color: $blue;
         border: 0;
     }
 
     &-checkout {
-        color: $primary-color;
+        color: $page-color;
         text-transform: uppercase;
-        border: 0.2rem solid $primary-color;
+        border: 0.2rem solid $page-color;
         background-color: transparent;
         box-sizing: content-box;
     }
@@ -1053,14 +1053,14 @@
             line-height: 1.4;
 
             span:first-child {
-                color: $primary-color;
+                color: $page-color;
             }
         }
 
         &-desc {
             margin-bottom: 4rem;
             line-height: 1.4;
-            color: $product-title;
+            color: $product-title-color;
             overflow: hidden;
             text-overflow: ' ';
             display: -webkit-box;
@@ -1075,7 +1075,7 @@
         &-share {
             outline: 0;
             border: 0;
-            background-color: $share-color;
+            background-color: $button-share-color;
             border-radius: 0.5rem;
             padding: 0 1rem;
             @extend .news-info-button;
@@ -1088,7 +1088,7 @@
         &-read {
             text-transform: uppercase;
             font-family: 'Montserrat';
-            color: $secondary-color;
+            color: $blue;
             border: 0.2rem solid currentColor;
         }
     }
@@ -1097,7 +1097,7 @@
         @include flex(space-between);
 
         &-user .name {
-            color: $secondary-color;
+            color: $blue;
         }
 
         &-love {
@@ -1156,7 +1156,7 @@
         @include flex(space-between);
         text-transform: uppercase;
         font-family: 'Montserrat';
-        color: $primary-color;
+        color: $page-color;
         margin-bottom: 2rem;
     }
 
@@ -1254,7 +1254,7 @@
         font-size: 2.5vmax;
         font-family: 'Montserrat';
         text-transform: uppercase;
-        color: $primary-color;
+        color: $page-color;
         margin-left: 2rem;
 
         & > span {
@@ -1271,7 +1271,7 @@
 }
 
 .pageinfo {
-    background-color: $page-info;
+    background-color: $page-info-color;
     padding: 12rem 0 9rem 0;
     @include flex(center, $wrap: wrap);
 
@@ -1371,7 +1371,7 @@
             &::before {
                 @include before(0.5rem, 0.5rem, 0, 0, -50%, 50%, null, null, 0);
                 border-radius: 50%;
-                background-color: $secondary-color;
+                background-color: $blue;
             }
         }
 
@@ -1411,7 +1411,7 @@
         &-username,
         &-email,
         &-message {
-            background-color: $primary-dark-color;
+            background-color: $page-dark-color;
             border: 0.1rem solid $border-form-color;
             border-radius: 0.5rem;
             padding: 1rem;
@@ -1448,7 +1448,7 @@
         }
     }
 
-    &-projectColor {
+    &-colors {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
         gap: 1rem;
@@ -1544,7 +1544,7 @@
 
 .footer {
     @include flex(center);
-    background-color: $primary-dark-color;
+    background-color: $page-dark-color;
     padding: 2rem 0 4rem 0;
     border-top: 0.1rem solid $border-form-color;
 
@@ -1643,7 +1643,7 @@
         display: none;
     }
 
-    .main-right-filter-page {
+    .main-right-filter-text {
         display: none;
     }
 }

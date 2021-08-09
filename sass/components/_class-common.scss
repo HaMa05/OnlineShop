@@ -20,14 +20,14 @@
 }
 
 .bg-active {
-    background-color: $secondary-color;
+    background-color: $blue;
     color: white;
 }
 
 .title {
     text-transform: uppercase;
     font-size: 2rem;
-    color: $primary-color;
+    color: $page-color;
     font-weight: bold;
     font-family: "Montserrat";
 }
@@ -42,5 +42,5 @@
 }
 
 .text-blue {
-    color: $secondary-color !important;
+    color: $blue !important;
 }
