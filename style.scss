@@ -286,49 +286,49 @@
             cursor: pointer;
 
             &:nth-child(1) {
-                @include background('/Products/sales.jpg');
+                @include background('product/sales.jpg');
             }
             &:nth-child(2) {
-                @include background('/Products/dress.jpg');
+                @include background('product/dress.jpg');
             }
             &:nth-child(3) {
-                @include background('/Products/lingerie.jpg');
+                @include background('product/lingerie.jpg');
             }
             &:nth-child(4) {
-                @include background('/Products/shirt.jpg');
+                @include background('product/shirt.jpg');
             }
             &:nth-child(5) {
-                @include background('/Products/acces.jpg');
+                @include background('product/acces.jpg');
             }
             &:nth-child(6) {
-                @include background('/Products/bag.jpg');
+                @include background('product/bag.jpg');
             }
             &:nth-child(7) {
-                @include background('/Products/sales.jpg');
+                @include background('product/sales.jpg');
             }
             &:nth-child(8) {
-                @include background('/Products/dress.jpg');
+                @include background('product/dress.jpg');
             }
             &:nth-child(9) {
-                @include background('/Products/lingerie.jpg');
+                @include background('product/lingerie.jpg');
             }
             &:nth-child(10) {
-                @include background('/Products/shirt.jpg');
+                @include background('product/shirt.jpg');
             }
             &:nth-child(11) {
-                @include background('/Products/acces.jpg');
+                @include background('product/acces.jpg');
             }
             &:nth-child(12) {
-                @include background('/Products/bag.jpg');
+                @include background('product/bag.jpg');
             }
             &:nth-child(13) {
-                @include background('/Products/sales.jpg');
+                @include background('product/sales.jpg');
             }
             &:nth-child(14) {
-                @include background('/Products/dress.jpg');
+                @include background('product/dress.jpg');
             }
             &:nth-child(15) {
-                @include background('/Products/lingerie.jpg');
+                @include background('product/lingerie.jpg');
             }
 
             &-detail {
@@ -813,17 +813,17 @@
     cursor: pointer;
     &:nth-child(1) {
         .product-img {
-            @include background('/Products/sales.jpg');
+            @include background('product/sales.jpg');
         }
     }
     &:nth-child(2) {
         .product-img {
-            @include background('/Products/dress.jpg');
+            @include background('product/dress.jpg');
         }
     }
     &:nth-child(3) {
         .product-img {
-            @include background('/Products/bag.jpg');
+            @include background('product/bag.jpg');
         }
     }
 
@@ -1083,22 +1083,22 @@
         width: 100%;
         &:nth-child(1) {
             .news-img {
-                @include background('/Products/sales.jpg');
+                @include background('product/sales.jpg');
             }
         }
         &:nth-child(2) {
             .news-img {
-                @include background('/Products/dress.jpg');
+                @include background('product/dress.jpg');
             }
         }
         &:nth-child(3) {
             .news-img {
-                @include background('/Products/bag.jpg');
+                @include background('product/bag.jpg');
             }
         }
         &:nth-child(4) {
             .news-img {
-                @include background('/Products/lingerie.jpg');
+                @include background('product/lingerie.jpg');
             }
         }
     }
@@ -1546,7 +1546,7 @@
                         $map: $images,
                         $key: $var,
                     );
-                    @include background('/Products/#{$value}');
+                    @include background('product/#{$value}');
                 }
             }
         }
