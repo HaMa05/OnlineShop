@@ -507,9 +507,98 @@ a {
   min-height: 34rem;
   height: 100%;
   width: 100%;
-  background-color: #f0f3f2;
   position: relative;
   cursor: pointer;
+}
+.main .products-item:nth-child(1) {
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(2) {
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(3) {
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(4) {
+  background-image: url("./images//products/shirt.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(5) {
+  background-image: url("./images//products/acces.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(6) {
+  background-image: url("./images//products/bag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(7) {
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(8) {
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(9) {
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(10) {
+  background-image: url("./images//products/shirt.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(11) {
+  background-image: url("./images//products/acces.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(12) {
+  background-image: url("./images//products/bag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(13) {
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(14) {
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main .products-item:nth-child(15) {
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .main .products-item-detail {
   display: flex;
@@ -930,6 +1019,24 @@ a {
   border: 0.1rem solid #dfe5e8;
   cursor: pointer;
 }
+.product:nth-child(1) .product-img {
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product:nth-child(2) .product-img {
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product:nth-child(3) .product-img {
+  background-image: url("./images//products/bag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .product-img {
   width: 8rem;
   height: 8rem;
@@ -1185,6 +1292,30 @@ a {
 .news-item {
   max-width: 26rem;
   width: 100%;
+}
+.news-item:nth-child(1) .news-img {
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.news-item:nth-child(2) .news-img {
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.news-item:nth-child(3) .news-img {
+  background-image: url("./images//products/bag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.news-item:nth-child(4) .news-img {
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .news-item:nth-child(2) .news-social-love::before, .news-item:nth-child(2) .news-social-comment::before {
   background-image: url("./images/love-noactive.svg");
@@ -1648,28 +1779,58 @@ a {
   background-color: #dfe5e8;
 }
 .pageinfo-colors-item:nth-child(1) {
-  background-color: #828e97;
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(2) {
-  background-color: #5c6973;
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(3) {
-  background-color: #4b565d;
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(4) {
-  background-color: #5c6973;
+  background-image: url("./images//products/shirt.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(5) {
-  background-color: #4b565d;
+  background-image: url("./images//products/acces.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(6) {
-  background-color: #828e97;
+  background-image: url("./images//products/bag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(7) {
-  background-color: #828e97;
+  background-image: url("./images//products/sales.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-item:nth-child(8) {
-  background-color: #828e97;
+  background-image: url("./images//products/dress.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pageinfo-colors-item:nth-child(9) {
+  background-image: url("./images//products/lingerie.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pageinfo-colors-navigation {
   display: flex;

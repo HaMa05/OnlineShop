@@ -282,9 +282,54 @@
             min-height: 34rem;
             height: 100%;
             width: 100%;
-            background-color: $filter-color;
             position: relative;
             cursor: pointer;
+
+            &:nth-child(1) {
+                @include background('/products/sales.jpg');
+            }
+            &:nth-child(2) {
+                @include background('/products/dress.jpg');
+            }
+            &:nth-child(3) {
+                @include background('/products/lingerie.jpg');
+            }
+            &:nth-child(4) {
+                @include background('/products/shirt.jpg');
+            }
+            &:nth-child(5) {
+                @include background('/products/acces.jpg');
+            }
+            &:nth-child(6) {
+                @include background('/products/bag.jpg');
+            }
+            &:nth-child(7) {
+                @include background('/products/sales.jpg');
+            }
+            &:nth-child(8) {
+                @include background('/products/dress.jpg');
+            }
+            &:nth-child(9) {
+                @include background('/products/lingerie.jpg');
+            }
+            &:nth-child(10) {
+                @include background('/products/shirt.jpg');
+            }
+            &:nth-child(11) {
+                @include background('/products/acces.jpg');
+            }
+            &:nth-child(12) {
+                @include background('/products/bag.jpg');
+            }
+            &:nth-child(13) {
+                @include background('/products/sales.jpg');
+            }
+            &:nth-child(14) {
+                @include background('/products/dress.jpg');
+            }
+            &:nth-child(15) {
+                @include background('/products/lingerie.jpg');
+            }
 
             &-detail {
                 @include flex($justify: center, $direction: column);
@@ -766,6 +811,21 @@
     @include flex(space-between);
     border: 0.1rem solid $border-viewed;
     cursor: pointer;
+    &:nth-child(1) {
+        .product-img {
+            @include background('/products/sales.jpg');
+        }
+    }
+    &:nth-child(2) {
+        .product-img {
+            @include background('/products/dress.jpg');
+        }
+    }
+    &:nth-child(3) {
+        .product-img {
+            @include background('/products/bag.jpg');
+        }
+    }
 
     &-img {
         @include size(8rem);
@@ -1021,6 +1081,26 @@
     &-item {
         max-width: 26rem;
         width: 100%;
+        &:nth-child(1) {
+            .news-img {
+                @include background('/products/sales.jpg');
+            }
+        }
+        &:nth-child(2) {
+            .news-img {
+                @include background('/products/dress.jpg');
+            }
+        }
+        &:nth-child(3) {
+            .news-img {
+                @include background('/products/bag.jpg');
+            }
+        }
+        &:nth-child(4) {
+            .news-img {
+                @include background('/products/lingerie.jpg');
+            }
+        }
     }
 
     &-item:nth-child(2) {
@@ -1459,9 +1539,14 @@
             @include size(8rem);
             background-color: $border-viewed;
 
-            @for $var from 1 to 9 {
+            @for $var from 1 to 10 {
                 &:nth-child(#{$var}) {
-                    background-color: map-get($map: $bg-colors, $key: $var);
+                    // background-color: map-get($map: $bg-colors, $key: $var);
+                    $value: map-get(
+                        $map: $images,
+                        $key: $var,
+                    );
+                    @include background('/products/#{$value}');
                 }
             }
         }
